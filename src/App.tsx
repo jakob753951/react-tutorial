@@ -1,13 +1,13 @@
 import Alert from "./components/Alert"
+import Button from "./components/Button"
+import {ButtonType} from "./components/Button"
 import ListGroup from "./components/ListGroup"
 
 function App() {
-	const handleSelectItem = (item: string) => {
-		console.log(item)
-	}
-
 	return <div>
-		<Alert/>
+		<Button type={ButtonType.Primary} onclick={() => {console.log("test")}}>
+			Demo
+		</Button>
 	</div>
 }
 
